@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/23/user/781459).
-* Наставник: [`Баранков Евгений`](https://up.htmlacademy.ru/htmlcss/23/user/518169).
+* Наставник: [Баранков Евгений](https://up.htmlacademy.ru/htmlcss/23/user/518169).
 
 ---
 
