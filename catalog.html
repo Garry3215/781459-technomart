@@ -19,12 +19,10 @@
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <ul class="user-menu-login">
-        <li>
-          <b>Равшан Джамшутович</b>
-          <a class="button-logout" href="#">Выйти</a>
-        </li>
-        <li>Мои заказы</li>
-        <li>Личный кабинет</li>
+        <li><a class="user-personal" href="#">Равшан Джамшутович</a></li>
+        <li><a class="button-logout" href="#">Выйти</a></li>
+        <li><a class="user_menu-orders" href="#">Мои заказы</a></li>
+        <li><a class="user-personal" href="#">Личный кабинет</a></li>
       </ul>
 
       <nav class="main-navigation">
@@ -33,9 +31,9 @@
           <li><a href="about.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="news.html">Новости</a></li>
-          <li><a href="special_offers.html"></a>Спецпредложения</li>
-          <li><a href="delivery.html"></a>Доставка</li>
-          <li><a href="contacts.html"></a>Контакты</li>
+          <li><a href="special_offers.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -49,7 +47,18 @@
       <h1 class="page-title">Перфораторы</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+          <form class="goods-filters" action="index.html" method="post">
+            <p class="filter-text">ПРОИЗВОДИТЕЛИ:</p>
+            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-bosch" checked>BOSCH</label>
+            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-interskol">ИНТЕРСКОЛ</label>
+            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-makita" checked>MAKITA</label>
+            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-dewalt">DEWALT</label>
+            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-hitachi">HITACHI</label>
+            <p class="filter-text">ПИТАНИЕ:</p>
+            <label class="filter-manufacturer"><input type="radio" name="manufacturer-accum" value="АККУМУЛЯТОРНЫЕ" checked>АККУМУЛЯТОРНЫЕ</label>
+            <label class="filter-manufacturer"><input type="radio" name="manufacturer-accum" value="СЕТЕВЫЕ">СЕТЕВЫЕ</label>
+            <button type="submit" name="filter-button">ПОКАЗАТЬ</button>
+          </form>
       </section>
       <section class="catalog">
         <ul class="calatog-list">
@@ -178,6 +187,12 @@
           </li>
         </ul>
       </section>
+      <section class="modal-good-in-cart">
+        <p>Товар добавлен в корзину!</p>
+        <a class="button red-button" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+        <button class="button" type="button" name="back-to-catalog-button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+        <button class="close-modal" type="button" name="close-modal">Закрыть</button>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -187,8 +202,8 @@
           <li><a href="about.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html"></a>Доставка</li>
-          <li><a href="contacts.html"></a>Контакты</li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           +7 (812) 555-05-55

@@ -27,9 +27,9 @@
             <li><a href="about.html">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="news.html">Новости</a></li>
-            <li><a href="special_offers.html"></a>Спецпредложения</li>
-            <li><a href="delivery.html"></a>Доставка</li>
-            <li><a href="contacts.html"></a>Контакты</li>
+            <li><a href="special_offers.html">Спецпредложения</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </section>
@@ -153,10 +153,26 @@
         <b>Контакты</b>
         <p>Вы можете забрать товар сами,
             заехав в наш офис:</p>
-        <img src="img/map.jpg" alt="Карта" width="300" height="158">
+        <a href="" class="small-map"><img src="img/map.jpg" alt="Карта" width="300" height="158"></a>
         <a href="#" class="button red-button">Заблудились? Напишите нам!</a>
       </section>
-
+      <section class="big-map-modal">
+        <img src="img/big_map.jpg" alt="Адрес магазина Техномарт на карте: Большая Конюшенная, 19, Санкт-Петербург"
+         width="940" height="446,2">
+         <button type="button" name="close-modal" class="close-modal">Закрыть карту</button>
+      </section>
+      <section class="write-us-modal">
+        <form class="write-us-modal" action="index.html" method="post">
+          <label class="write-us-name"><input type="text" name="user-name"
+             placeholder="Имя Фамилия" >Ваше имя:</label>
+          <label class="write-us-email"><input type="text" name="user-email"
+                placeholder="email@example.com" >Ваш e-mail:</label>
+          <label class="write-us-text"><input type="text" name="user-text"
+                placeholder="В свободной форме" >Текст письма:</label>
+          <button type="submit" name="submit-button" class="red-button">ОТПРАВИТЬ</button>
+          <button type="button" name="close-modal" class="close-modal">Закрыть окно обратной связи</button>
+        </form>
+      </section>
     </main>
     <footer class="main-footer">
       <section class="upper-footer">
@@ -165,8 +181,8 @@
           <li><a href="about.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html"></a>Доставка</li>
-          <li><a href="contacts.html"></a>Контакты</li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           +7 (812) 555-05-55
