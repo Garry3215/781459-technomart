@@ -49,14 +49,18 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="goods-filters" action="index.html" method="post">
             <p class="filter-text">ПРОИЗВОДИТЕЛИ:</p>
-            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-bosch" checked>BOSCH</label>
-            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-interskol">ИНТЕРСКОЛ</label>
-            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-makita" checked>MAKITA</label>
-            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-dewalt">DEWALT</label>
-            <label class="filter-manufacturer"><input type="checkbox" name="manufacturer-hitachi">HITACHI</label>
+            <ul class="manufacturer-list">
+              <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-bosch" checked>BOSCH</label></li>
+              <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-interskol">ИНТЕРСКОЛ</label></li>
+              <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-makita" checked>MAKITA</label></li>
+              <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-dewalt">DEWALT</label></li>
+              <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-hitachi">HITACHI</label></li>
+            </ul>
             <p class="filter-text">ПИТАНИЕ:</p>
-            <label class="filter-manufacturer"><input type="radio" name="manufacturer-accum" value="АККУМУЛЯТОРНЫЕ" checked>АККУМУЛЯТОРНЫЕ</label>
-            <label class="filter-manufacturer"><input type="radio" name="manufacturer-accum" value="СЕТЕВЫЕ">СЕТЕВЫЕ</label>
+            <ul class="power-list">
+              <li><label class="filter-manufacturer"><input type="radio" name="manufacturer-accum" value="АККУМУЛЯТОРНЫЕ" checked>АККУМУЛЯТОРНЫЕ</label></li>
+              <li><label class="filter-manufacturer"><input type="radio" name="manufacturer-accum" value="СЕТЕВЫЕ">СЕТЕВЫЕ</label></li>
+            </ul>
             <button type="submit" name="filter-button">ПОКАЗАТЬ</button>
           </form>
       </section>
