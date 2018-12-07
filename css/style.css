@@ -56,7 +56,6 @@ header {
    width: 100%;
    padding-top: 21px;
    padding-bottom: 21px;
-   flex-grow: 1;
  }
 
 .site-navigation,
@@ -178,9 +177,13 @@ header {
   background-color: #ee3643;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 21px;
-  padding-right: 21px;
+  padding-left: 55px;
+  padding-right: 55px;
+  align-content: center;
+}
 
+.header-logo.container {
+  padding: 0;
 }
 
 .header-search {
