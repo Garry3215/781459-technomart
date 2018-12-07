@@ -32,27 +32,35 @@ header {
 }
 
 .main-navigation-wrapper {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 0;
+}
+
+.main-navigation.container {
+  padding: 0;
 }
 
 .site-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.site-navigation li {
+    flex-grow: 1;
+    text-align: center;
 }
 
 .navigation-item {
+   display: inline-block;
+   width: 100%;
    padding-top: 21px;
    padding-bottom: 21px;
-   padding-right: 34px;
-   padding-left: 34px;
+   flex-grow: 1;
  }
 
 .site-navigation,
-.user_menu,
+.user-menu,
 .delivering-company,
 .footer-menu,
 .footer-main-menu,
@@ -137,6 +145,7 @@ header {
   color: #000000;
   font-size: 21px;
   line-height: 21px;
+  display: inline-block;
 }
 
 .user-menu-button:hover,
@@ -514,20 +523,20 @@ header {
   opacity: 0.3;
 }
 
-.user_menu-orders,
+.user-menu-orders,
 .user-menu-personal {
   color: #32425c;
   text-decoration: underline;
 }
 
-.user_menu-orders:hover,
+.user-menu-orders:hover,
 .user-menu-personal:hover,
-.user_menu-orders:focus,
+.user-menu-orders:focus,
 .user-menu-personal:focus {
   color: #ee3643;
 }
 
-.user_menu-orders:active,
+.user-menu-orders:active,
 .user-menu-personal:active {
   color: rgba(50, 66, 92, 0.3);
 }
@@ -557,7 +566,7 @@ header {
   margin-bottom: 44px;
 }
 
-.user_menu {
+.user-menu {
   display: flex;
   padding: 0;
   margin: 0;
