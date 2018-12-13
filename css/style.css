@@ -29,6 +29,7 @@ header {
   background-color: #32425c;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 5px 0 0 #293449;
 }
 
 .main-navigation-wrapper {
@@ -55,7 +56,7 @@ header {
    display: inline-block;
    width: 100%;
    padding-top: 21px;
-   padding-bottom: 21px;
+   padding-bottom: 18px;
  }
 
 .site-navigation,
@@ -97,6 +98,8 @@ header {
   margin-bottom: 46px;
   display: flex;
   flex-direction: row;
+
+  width: auto;
 }
 
 .header-content .container {
@@ -105,11 +108,49 @@ header {
 }
 
 .top-header-button {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 21px;
-  padding-right: 21px;
+  padding-top: 11px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  padding-right: 31px;
   margin: 0;
+  width: auto;
+}
+
+.bookmarks-button {
+  position: relative;
+}
+
+.bookmarks-button::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  top: 12px;
+  left: 17px;
+
+  background-image: url("..img/icon-bookmark.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-position: 100% 100%;
+  opacity: 0.3;
+}
+
+.cart-button {
+  position: relative;
+}
+
+.cart-button::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  top: 12px;
+  left: 17px;
+  background-color: #ffffff;
+  background-image: url("img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .top-header-button:hover,
@@ -123,7 +164,7 @@ header {
 
 .order-button {
   background-color: #63a63e;
-  padding-top: 12px;
+  padding-top: 11px;
   padding-bottom: 12px;
   padding-left: 21px;
   padding-right: 21px;
@@ -175,11 +216,21 @@ header {
 
 .header-logo {
   background-color: #ee3643;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-bottom: 0px;
   padding-left: 55px;
   padding-right: 55px;
-  align-content: center;
+  box-shadow: 0 5px 0 0 #B62430;
+  margin: 0;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  background-color: #ca2c37;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
 }
 
 .header-logo.container {
@@ -195,6 +246,8 @@ header {
   padding-bottom: 12px;
   padding-left: 21px;
   padding-right: 21px;
+  margin: 0;
+  width: 270px;
 }
 
 .header-search:hover {
@@ -238,6 +291,46 @@ header {
   border-style: solid;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 74px;
+  padding-right: 52px;
+  position: relative;
+}
+
+.header-fone::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  top: 12px;
+  left: 17px;
+  background-color: #ffffff;
+  background-image: url("img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.user-menu-button.user-menu-enter {
+  padding-left: 48px;
+  padding-right: 27px;
+}
+
+.user-menu-enter {
+  position: relative;
+}
+
+.user-menu-enter::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  top: 12px;
+  left: 17px;
+  background-color: #ffffff;
+  background-image: url("img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .header-adress {
@@ -246,6 +339,7 @@ header {
   color: #32425c;
   margin: 0;
   padding: 0;
+  align-self: center;
 }
 
 .visually-hidden {
@@ -276,6 +370,26 @@ header {
 .delivering-company {
   font-size: 18px;
   line-height: 20px;
+}
+
+.delivering-company-item {
+  padding-left: 35px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.delivering-company-item::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  top: 10px;
+  left: 1px;
+  background-color: #ee3643;
+}
+
+.about-company .red-button {
+  width: 220px;
 }
 
 .red-button {
@@ -365,6 +479,13 @@ header {
 
 .footer-logo {
   background-color: #ee3643;
+  height: 23px;
+  width: 138px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 5px 0 0 #B62430;
 }
 
 .lower-footer {
@@ -405,6 +526,25 @@ header {
 .feedback {
   display: flex;
   justify-content: space-between;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  background-color: #212a3a;
+  border-radius: 21px;
+}
+
+.footer-social {
+  display: flex;
+  width: 138px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .social-button:hover,
@@ -553,6 +693,8 @@ header {
 .header-content-left,
 .header-content-right {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .header-contacts {
