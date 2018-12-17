@@ -20,7 +20,7 @@
               <form class="header-search-wrapper">
                 <label><input  class="header-search" type="text" name="header-search" placeholder="Поиск:"></label>
               </form>
-            
+
 
           </div>
           <div class="header-content-right">
@@ -184,18 +184,24 @@
       </div>
       <section class="big-map-modal">
         <img src="img/big_map.jpg" alt="Адрес магазина Техномарт на карте: Большая Конюшенная, 19, Санкт-Петербург"
-         width="940" height="446,2">
-         <button type="button" name="close-modal" class="close-modal">Закрыть карту</button>
+         width="940" height="446,2" class="big-map">
+         <button type="button" name="close-modal" class="close-modal"><span class="visually-hidden">Закрыть карту</span></button>
       </section>
       <section class="write-us-modal">
-        <form class="write-us-modal" action="index.html" method="post">
-          <p><label class="write-us-name"><input type="text" name="user-name"
-             placeholder="Имя Фамилия" >Ваше имя:</label></p>
-          <p><label class="write-us-email"><input type="text" name="user-email"
-                placeholder="email@example.com" >Ваш e-mail:</label></p>
-          <p><label class="write-us-text"><textarea name="user-text"
-             placeholder="В свободной форме"></textarea></label></p>
-          <button type="submit" name="submit-button" class="red-button">ОТПРАВИТЬ</button>
+
+        <form class="" action="index.html" method="post">
+          <div class="write-us-modal-form">
+            <label class="write-us-label" for="modal-user-name">Ваше имя:</label>
+            <label class="write-us-label" for="modal-user-email">Ваш e-mail:</label>
+            <input type="text" name="user-name" placeholder="Имя Фамилия" id="modal-user-name" class="modal-input">
+            <input type="text" name="user-email" placeholder="email@example.com" id="modal-user-email" class="modal-input">
+            <label for="modal-user-text" class="write-us-text">Текст письма:</label>
+            <textarea name="user-text" placeholder="В свободной форме" class="modal-textarea" rows="4"></textarea>
+          </div>
+
+          <div class="modal-button-wrapper">
+            <button type="submit" name="submit-button" class="red-button modal-button">ОТПРАВИТЬ</button>
+          </div>
           <button type="button" name="close-modal" class="close-modal">Закрыть окно обратной связи</button>
         </form>
       </section>

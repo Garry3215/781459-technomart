@@ -79,16 +79,37 @@
             <form class="goods-filters" action="index.html" method="post">
               <p class="filter-text">ПРОИЗВОДИТЕЛИ:</p>
               <ul class="manufacturer-list">
-                <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-bosch" checked>BOSCH</label></li>
-                <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-interskol">ИНТЕРСКОЛ</label></li>
-                <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-makita" checked>MAKITA</label></li>
-                <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-dewalt">DEWALT</label></li>
-                <li><label class="filter-manufacturer"><input type="checkbox" name="manufacturer-hitachi">HITACHI</label></li>
+                <li>
+                  <input type="checkbox" name="manufacturer-bosch" id="manufacturer-bosch" checked class="visually-hidden manufacturer-input">
+                  <label for="manufacturer-bosch" class="filter-manufacturer">BOSCH</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manufacturer-interskol" id="manufacturer-interskol" class="visually-hidden manufacturer-input">
+                  <label for="manufacturer-interskol" class="filter-manufacturer">ИНТЕРСКОЛ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manufacturer-makita" checked id="manufacturer-makita" class="visually-hidden manufacturer-input">
+                  <label for="manufacturer-makita" class="filter-manufacturer">MAKITA</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manufacturer-dewalt" id="manufacturer-dewalt" class="visually-hidden manufacturer-input">
+                  <label for="manufacturer-dewalt" class="filter-manufacturer">DEWALT</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manufacturer-hitachi" id="manufacturer-hitachi" class="visually-hidden manufacturer-input">
+                  <label for="manufacturer-hitachi" class="filter-manufacturer">HITACHI</label>
+                </li>
               </ul>
               <p class="filter-text">ПИТАНИЕ:</p>
               <ul class="power-list">
-                <li><label class="filter-manufacturer"><input type="radio" name="manufacturer-accum" value="АККУМУЛЯТОРНЫЕ" checked>АККУМУЛЯТОРНЫЕ</label></li>
-                <li><label class="filter-manufacturer"><input type="radio" name="manufacturer-accum" value="СЕТЕВЫЕ">СЕТЕВЫЕ</label></li>
+                <li>
+                  <input type="radio" name="manufacturer-power" value="АККУМУЛЯТОРНЫЕ" checked id="manufacturer-accum" class="visually-hidden power-input">
+                  <label for="manufacturer-accum" class="filter-power">АККУМУЛЯТОРНЫЕ</label>
+                </li>
+                <li>
+                  <input type="radio" name="manufacturer-power" value="СЕТЕВЫЕ" id="manufacturer-power" class="visually-hidden power-input">
+                  <label for="manufacturer-power" class="filter-power">СЕТЕВЫЕ</label>
+                </li>
               </ul>
               <button type="submit" name="filter-button">ПОКАЗАТЬ</button>
             </form>
@@ -230,8 +251,10 @@
 
       <section class="modal-good-in-cart">
         <p>Товар добавлен в корзину!</p>
-        <a class="button red-button" href="#">ОФОРМИТЬ ЗАКАЗ</a>
-        <button class="button" type="button" name="back-to-catalog-button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+          <div class="modal-good-in-cart-wrapper">
+          <a class="make-order-button" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+          <a class="back-to-catalog-button" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+        </div>
         <button class="close-modal" type="button" name="close-modal">Закрыть</button>
       </section>
     </main>
