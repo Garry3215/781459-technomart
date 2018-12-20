@@ -679,6 +679,14 @@ header {
   background-image: url("../img/form-2.svg");
 }
 
+.modal-close {
+  display: none;
+}
+
+.modal-open {
+  display: block;
+}
+
 .upper-footer {
   background-color: #32425c;
   font-size: 18px;
