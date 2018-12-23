@@ -10,6 +10,20 @@ var cartLink = document.querySelector(".buy-button");
 var cartPopup = document.querySelector(".modal-good-in-cart");
 var cartClose = document.querySelector(".modal-good-in-cart .close-modal");
 
+var leftSlider = document.querySelector(".left-slider-button");
+var rightSlider = document.querySelector(".right-slider-button");
+var slider1 = document.querySelector(".slider-1");
+
+
+leftSlider && leftSlider.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  if (slider && slider.classList.contains("bottom-slider")) {
+    slider.classList.remove("bottom-slider");
+  } else {
+    slider.classList.add("bottom-slider");
+  }
+})
+
 
 cartLink && cartLink.addEventListener("click", function (evt) {
     evt.preventDefault();
