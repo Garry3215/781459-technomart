@@ -74,7 +74,9 @@ header {
 .calatog-list,
 .popular-manufacturer-ul,
 .services-ul,
-.catalog-pages {
+.catalog-pages,
+.user-menu-login-name,
+.user-menu-login-orders {
   list-style: none;
   margin: 0;
   padding: 0;
