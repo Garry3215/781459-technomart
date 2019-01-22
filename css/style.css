@@ -55,6 +55,7 @@ header {
 
 .navigation-item {
    display: inline-block;
+   vertical-align: top;
    width: 100%;
    padding-top: 21px;
    padding-bottom: 18px;
@@ -101,7 +102,7 @@ header {
   line-height: 18px;
   color: #ffffff;
   background-color: #293449;
-  margin-bottom: 46px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: row;
 
@@ -202,6 +203,7 @@ header {
   font-size: 21px;
   line-height: 21px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .user-menu-button:hover,
@@ -214,7 +216,7 @@ header {
 }
 
 .header-italic {
-  font-family: Cuprum;
+
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
@@ -415,20 +417,32 @@ header {
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .about-company p,
 .contacts p {
-  font-family: "PTSans-Regular", sans-serif;
+  font-family: "PTSans-Regular", Arial, sans-serif;
   font-style: normal;
   font-size: 13px;
   line-height: 24px;
   text-transform: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.small-map {
+  margin-bottom: 10px;
+}
+
+.contacts p {
+  margin-bottom: 30px;
 }
 
 .delivering-company {
   font-size: 18px;
   line-height: 20px;
+  margin-top: 25px;
 }
 
 .delivering-company-item {
@@ -497,14 +511,14 @@ header {
 }
 
 .write-us-modal label {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   margin-bottom: 10px;
 }
 
 .write-us-modal input {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   box-sizing: border-box;
@@ -532,7 +546,7 @@ header {
 }
 
 .write-us-modal textarea {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   box-sizing: border-box;
@@ -548,7 +562,7 @@ header {
 
 .modal-button {
   border: 0px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   margin-left: 80px;
@@ -599,7 +613,7 @@ header {
 }
 
 .modal-good-in-cart p {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   margin-top: 60px;
@@ -629,6 +643,7 @@ header {
 .make-order-button,
 .back-to-catalog-button {
   display: inline-block;
+  vertical-align: top;
   padding-top: 12px;
   padding-bottom: 12px;
   width: 100%;
@@ -775,7 +790,7 @@ header {
 .lower-footer {
   background-color: #293449;
   color: #ffffff;
-  padding-top: 39px;
+  padding-top: 45px;
   padding-bottom: 30px;
 }
 
@@ -811,6 +826,7 @@ header {
 .feedback {
   display: flex;
   justify-content: space-between;
+  margin-right: 10px;
 }
 
 .feedback li {
@@ -834,7 +850,7 @@ header {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  padding-left: 80px;
+  padding-left: 92px;
 }
 
 .social-button:hover,
@@ -898,9 +914,9 @@ header {
 }
 
 .breadcrumbs {
-  font-family: "PTSans", sans-serif;
-  font-size: 14px;
-  line-height: 17.5px;
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   text-transform: uppercase;
   display: flex;
   position: relative;
@@ -908,6 +924,12 @@ header {
 
 .breadcrumbs-wrapper {
   margin-left: 15px;
+}
+
+.breadcrumbs li {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .breadcrumbs::after {
@@ -926,6 +948,8 @@ header {
   padding-left: 40px;
   margin-bottom: 1px;
   position: relative;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .breadcrumbs-item::before {
@@ -942,6 +966,7 @@ header {
 
 .breadcrumbs a {
     color: #000000;
+    margin-top: 0px;
 }
 
 .page-title {
@@ -956,7 +981,7 @@ header {
 }
 
 .filter-text {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
   color: #000000;
@@ -966,12 +991,13 @@ header {
 
 .filter-manufacturer,
 .filter-power {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: top;
   padding-left: 35px;
   margin-bottom: 15px;
   position: relative;
@@ -1048,7 +1074,7 @@ header {
 }
 
 .goods-filters button {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 14px;
   line-height: 17.5px;
   background-color: #ffffff;
@@ -1145,6 +1171,7 @@ header {
 
 .header-content-right > a {
   display: inline-block;
+  vertical-align: top;
   width: 33.3%;
   box-sizing: border-box;
 }
@@ -1160,18 +1187,20 @@ header {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  padding-top: 3px;
 }
 
 .header-middle {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 44px;
+  margin-bottom: 41px;
 }
 
 .user-menu {
   display: flex;
   padding: 0;
   margin: 0;
+  padding-top: 4px;
 }
 
 .user-menu-registration {
@@ -1189,7 +1218,15 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 82px;
-  padding-bottom: 86px;
+  padding-bottom: 80px;
+}
+
+.about-company-wrapper .red-button {
+  margin-top: 10px;
+}
+
+.main-header {
+  margin-bottom: 25px;
 }
 
 .about-company {
@@ -1200,6 +1237,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 0px;
 }
 
 .about-company {
@@ -1211,7 +1249,7 @@ header {
 .upper-footer-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .user-menu-login-name,
@@ -1284,7 +1322,7 @@ header {
 
 .catalog-item-title-h3 {
   order: 1;
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -1306,7 +1344,7 @@ header {
 .catalog-item-old-price,
 .catalog-item-price {
   order: 2;
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1381,8 +1419,14 @@ header {
   margin-bottom: 20px;
 }
 
+.advantage-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .advantage-name {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -1406,10 +1450,68 @@ header {
 
 .slider-1 {
   background-image: url("../img/slider-1.jpg");
+  position: relative;
+}
+
+.slider-1::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  bottom: 39px;
+  left: 295px;
+  border-color: #fff;
+  background-color: #ee3643;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.slider-1::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  bottom: 39px;
+  left: 315px;
+  border-color: #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .slider-2 {
   background-image: url("../img/slider-2.jpg");
+  position: relative;
+}
+
+.slider-2::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  bottom: 39px;
+  left: 295px;
+  border-color: #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.slider-2::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  bottom: 39px;
+  left: 315px;
+  border-color: #fff;
+  background-color: #ee3643;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .bottom-slider {
@@ -1456,6 +1558,8 @@ header {
   margin-left: 25px;
 }
 
+
+
 .right-slider-button {
   background-image: url("../img/icon-right.svg");
   margin-right: 20px;
@@ -1468,6 +1572,7 @@ header {
 
 .advantage a {
   display: inline-block;
+  vertical-align: top;
   width: 135px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
@@ -1495,12 +1600,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 55px;
+  margin-top: 65px;
 }
 
 .right-advantage {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .advantage-materials {
@@ -1565,6 +1673,7 @@ header {
 .advantage-delivery {
   position: relative;
   background-color: #ffc047;
+  margin-bottom: 0px;
 }
 
 .advantage-delivery::after {
@@ -1582,15 +1691,23 @@ header {
   justify-content: space-between;
   background-color: #f9f5f0;
   padding: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
+.popular-goods .goods-on-index,
+.popular-goods .catalog-item {
+  margin-bottom: 0px;
+}
 
 .popular-text {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   padding-left: 30px;
+}
+
+.popular-goods {
+  margin-bottom: 20px;
 }
 
 .popular-goods-button {
@@ -1633,6 +1750,7 @@ header {
   text-align: center;
   line-height: 145px;
   border: solid 1px #eaeaea;
+
 }
 
 .popular-manufacturer-item:hover,
@@ -1650,7 +1768,7 @@ header {
 
 .services {
   background-color: #f4f7f9;
-  padding-bottom: 107px;
+  padding-bottom: 84px;
 }
 
 .services-ul {
@@ -1668,17 +1786,17 @@ header {
 }
 
 .services h3 {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 60px;
+  padding-top: 92px;
   margin-bottom: 25px;
   font-weight: normal;
 }
 
 .services p {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin-top: 0px;
@@ -1696,7 +1814,7 @@ header {
   box-shadow: 0px 1px 0 0 #293449;
   box-shadow: 0px -1px 0 0 #405069;
   color: #ffffff;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
@@ -1719,7 +1837,7 @@ header {
 }
 
 .services-item-content h4 {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
@@ -1775,7 +1893,7 @@ header {
 }
 
 .request-button {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   border: 0px;
@@ -1795,7 +1913,7 @@ header {
 .filter-heading {
   display: flex;
   justify-content: space-between;
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   margin-bottom: 20px;
@@ -1803,6 +1921,7 @@ header {
 
 .filter-heading p {
   display: inline-block;
+  vertical-align: top;
   padding-left: 18px;
 }
 
@@ -1826,6 +1945,7 @@ header {
 
 .filter-heading-anchor {
   display: inline-block;
+  vertical-align: top;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted;
   border-color: #ee3643;
@@ -1843,6 +1963,7 @@ header {
 
 .filter-heading-triangle-up {
   display: inline-block;
+  vertical-align: top;
   width: 11px;
   height: 10px;
   background-image: url("../img/icon-up-dir-black.png");
@@ -1851,6 +1972,7 @@ header {
 
 .filter-heading-triangle-down {
   display: inline-block;
+  vertical-align: top;
   width: 11px;
   height: 10px;
   background-image: url("../img/icon-down-dir.svg");
@@ -1951,7 +2073,7 @@ header {
   background-color: #f7f3ec;
   border: 0;
   text-align: center;
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   padding-top: 12px;
@@ -1990,7 +2112,7 @@ input::-webkit-inner-spin-button {
 
 .catalog-pages-button {
   color: #000;
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2045,7 +2167,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-description-h3 {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -2054,7 +2176,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-description-p {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
